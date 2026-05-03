@@ -254,7 +254,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/filashop">
       <div className="min-h-screen bg-white">
         <Routes>
           <Route
