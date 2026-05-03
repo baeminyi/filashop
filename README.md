@@ -1,73 +1,73 @@
-# React + TypeScript + Vite
+# FILA - 공식 온라인 스토어 클론
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FILA - 공식 쇼핑몰을 참고하여 제작한 프론트엔드 포트폴리오 프로젝트입니다.
 
-Currently, two official plugins are available:
+## 주요 기능
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 상품 목록 (카테고리 필터, 정렬, 검색)
+- 상품 상세 페이지 (컬러 선택, 수량 조절)
+- 장바구니 (추가, 삭제, 수량 변경, 총액 계산)
+- 로그인 / 회원가입 (간편 로그인 UI 포함)
+- 히어로 배너 슬라이더 (자동 재생, 수동 조작)
+- 위시리스트 (좋아요)
+- 반응형 디자인 (모바일, 태블릿, 데스크톱)
 
-## React Compiler
+## 기술 스택
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework** : React 18 + TypeScript
+- **Build Tool** : Vite
+- **Styling** : Tailwind CSS v4
+- **Routing** : React Router v6
+- **State** : React useState (장바구니, 위시리스트, 필터)
 
-## Expanding the ESLint configuration
+## 실행 방법
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+```bash
+# 저장소 클론
+git clone https://github.com/baeminyi/filashop.git
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+# 폴더 이동
+cd fila-shop
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+# 의존성 설치
+npm install
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# 개발 서버 실행
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+브라우저에서 http://localhost:5173 접속
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 페이지 구성
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| 페이지 | 경로 | 설명 |
+|--------|------|------|
+| 메인 | / | 배너, 상품 목록, 카테고리 필터 |
+| 상품 상세 | /product/:id | 상품 정보, 컬러 선택, 장바구니 담기 |
+| 로그인 | /login | 로그인/회원가입 탭 전환 |
+
+## 프로젝트 구조
+
 ```
+src/
+├── components/
+│   ├── Header.tsx
+│   ├── HeroBanner.tsx
+│   ├── ProductCard.tsx
+│   ├── CartDrawer.tsx
+│   └── Footer.tsx
+├── pages/
+│   ├── ProductDetail.tsx
+│   └── Login.tsx
+├── data/
+│   └── products.ts
+├── App.tsx
+├── main.tsx
+└── index.css
+```
+
+## 면책 조항
+
+본 프로젝트는 **학습 및 포트폴리오 목적**으로 제작되었습니다.
+FILA 브랜드의 로고 및 상품 이미지는 FILA Korea 공식 사이트에서 참고하였으며, 상업적 용도로 사용되지 않습니다.
+실제 FILA Korea와는 관련이 없습니다.
