@@ -6,7 +6,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between py-10 md:py-12 border-b border-white/10 gap-8 md:gap-10">
           <div className="max-w-[300px]">
             <img
-              src="/images/ft_logo.png"
+              src="/filashop/images/ft_logo.png"
               alt="FILA"
               className="h-[22px] md:h-[24px] mb-3"
             />

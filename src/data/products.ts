@@ -31,7 +31,7 @@ export const products: Product[] = [
     colors: ["#000000", "#ffffff", "#8B5E3C"],
     rating: 4.8,
     reviews: 324,
-    image: "/images/court-deluxe.webp",
+    image: "/filashop/images/court-deluxe.webp",
   },
   {
     id: 2,
@@ -43,7 +43,7 @@ export const products: Product[] = [
     colors: ["#ffffff", "#000000", "#0c1f3f"],
     rating: 4.9,
     reviews: 1087,
-    image: "/images/ranger.webp",
+    image: "/filashop/images/ranger.webp",
   },
   {
     id: 3,
@@ -55,7 +55,7 @@ export const products: Product[] = [
     colors: ["#a0a0a0", "#ffffff"],
     rating: 4.7,
     reviews: 256,
-    image: "/images/echappe.webp",
+    image: "/filashop/images/echappe.webp",
   },
   {
     id: 4,
@@ -67,7 +67,7 @@ export const products: Product[] = [
     colors: ["#000000", "#ffffff", "#9370DB"],
     rating: 4.5,
     reviews: 203,
-    image: "/images/linear-tshirt.webp",
+    image: "/filashop/images/linear-tshirt.webp",
   },
   {
     id: 5,
@@ -79,7 +79,7 @@ export const products: Product[] = [
     colors: ["#ffffff", "#8B4513", "#c8102e", "#4169E1"],
     rating: 4.6,
     reviews: 178,
-    image: "/images/track-jacket.webp",
+    image: "/filashop/images/track-jacket.webp",
   },
   {
     id: 6,
@@ -91,7 +91,7 @@ export const products: Product[] = [
     colors: ["#000000", "#FFFDD0", "#c8102e"],
     rating: 4.4,
     reviews: 92,
-    image: "/images/heritage-cap.webp",
+    image: "/filashop/images/heritage-cap.webp",
   },
   {
     id: 7,
@@ -103,7 +103,7 @@ export const products: Product[] = [
     colors: ["#000000", "#808080"],
     rating: 4.5,
     reviews: 341,
-    image: "/images/jogger-pants.webp",
+    image: "/filashop/images/jogger-pants.webp",
   },
   {
     id: 8,
@@ -115,7 +115,7 @@ export const products: Product[] = [
     colors: ["#808080", "#7B2D8E"],
     rating: 4.8,
     reviews: 167,
-    image: "/images/kids-disruptor.webp",
+    image: "/filashop/images/kids-disruptor.webp",
   },
   {
     id: 9,
@@ -127,7 +127,7 @@ export const products: Product[] = [
     colors: ["#000000", "#87CEEB", "#FAF0E6"],
     rating: 4.3,
     reviews: 88,
-    image: "/images/core-backpack.webp",
+    image: "/filashop/images/core-backpack.webp",
   },
   {
     id: 10,
@@ -139,7 +139,7 @@ export const products: Product[] = [
     colors: ["#ffffff", "#0c1f3f", "#c8102e"],
     rating: 4.4,
     reviews: 134,
-    image: "/images/training-shorts.webp",
+    image: "/filashop/images/training-shorts.webp",
   },
   {
     id: 11,
@@ -151,7 +151,7 @@ export const products: Product[] = [
     colors: ["#000000", "#f5c518", "#7b8a56"],
     rating: 4.6,
     reviews: 412,
-    image: "/images/ritmo.webp",
+    image: "/filashop/images/ritmo.webp",
   },
   {
     id: 12,
@@ -163,6 +163,6 @@ export const products: Product[] = [
     colors: ["#ffffff", "#FF69B4", "#FFD700"],
     rating: 4.7,
     reviews: 201,
-    image: "/images/kids-tshirt.webp",
+    image: "/filashop/images/kids-tshirt.webp",
   },
 ];

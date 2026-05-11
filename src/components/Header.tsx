@@ -56,18 +56,24 @@ export default function Header({ cartCount, onCartOpen, onSearch }: HeaderProps)
       >
         <div className="max-w-[1400px] mx-auto px-4 md:px-10 flex items-center justify-between h-[56px] md:h-[68px]">
           {/* 모바일: 햄버거 */}
-          <button
-            className="md:hidden w-8 h-8 flex flex-col items-center justify-center gap-1.5"
+                    <button
+            className="md:hidden w-8 h-8 flex items-center justify-center"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-            <span className={`w-5 h-[2px] bg-white transition-all duration-300 ${mobileMenuOpen ? "rotate-45 translate-y-[5px]" : ""}`} />
-            <span className={`w-5 h-[2px] bg-white transition-all duration-300 ${mobileMenuOpen ? "opacity-0" : ""}`} />
-            <span className={`w-5 h-[2px] bg-white transition-all duration-300 ${mobileMenuOpen ? "-rotate-45 -translate-y-[5px]" : ""}`} />
+            {mobileMenuOpen ? (
+              <span className="text-white text-[22px]">✕</span>
+            ) : (
+              <div className="flex flex-col items-center justify-center gap-1.5">
+                <span className="w-5 h-[2px] bg-white" />
+                <span className="w-5 h-[2px] bg-white" />
+                <span className="w-5 h-[2px] bg-white" />
+              </div>
+            )}
           </button>
 
           {/* 로고 */}
           <img
-            src="/images/logo.png"
+            src="/filashop/images/logo.png"
             alt="FILA"
             className="h-[22px] md:h-[24px] cursor-pointer"
             onClick={handleLogoClick}
